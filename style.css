@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --TEXT-COLOR : white;
+    --BG-COLOR : black;
+    --TP-BG :rgba(255, 255, 255, 0.167);
+    --FS : clamp(0.6rem, 3vw, 1.5rem);
+    --FS-FOOTER:clamp(0.6rem,2vw,0.9rem);
+    --HOVER-COLOR:rgba(255, 255, 255, 0.167);
+    --SHADOW:0px 4px 8px rgba(239, 234, 234, 0.383);
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/mountains-7884039_1920\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    color: var(--TEXT-COLOR);
+}
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position:absolute;
+    top: 0px;
+    width: 100vw;
+    font-size: var(--FS);
+    padding: 1rem 0;
+    box-shadow: var(--SHADOW)
+    
+}
+.header__Links{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem; /* Use Mordern CSS here */
+   
+}
+.main__Home{
+    display: flex;
+    place-content: center;
+}
+.footer{
+    text-align: center;
+    position: absolute;
+    width: 100vw;
+    bottom: 0px;
+    background: var(--TP-BG);
+    padding: 0.25rem 0;
+    font-size: var(--FS-FOOTER);
+}
+.main__Home__Article{
+    display: flex;
+    flex-direction: column;
+    font-size: var(--FS);
+    text-align: center;
+    line-height: 2;   
+}
+.header__Links a{
+    text-decoration: none;
+    color: var(--TEXT-COLOR);
+}
+.main__Home__Article h1{
+    font-size: x-large;
+   
+}
+.main__Home__Article p{
+    font-size: medium;
+    font-weight: 100;
+}
+.header__Links a:hover{
+color: var(--HOVER-COLOR);
+}
+.main__Home__Article img{
+   height:1.5em;
+    align-self: center;
+}
