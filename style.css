@@ -1,15 +1,35 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 :root{
-    --TEXT-COLOR : rgb(255, 253, 253);
-    --BG-COLOR : black;
-    --TP-BG :rgba(255, 255, 255, 0.167);
-    --FS : clamp(0.6rem, 3vw, 1.5rem);
-    --FS-FOOTER:clamp(0.6rem,2vw,0.9rem);
-    --HOVER-COLOR:rgba(255, 255, 255, 0.167);
-    --SHADOW:0px 4px 8px rgba(239, 234, 234, 0.383);
+ /*  home page */
+    --TEXT-COL-HOME:white;
+    --BG-COL-HOME:black;
+    --HOVER-COLOR-HOME:rgba(255, 255, 255, 0.167);
+
+  /*   Other Pages */
+    --TEXT-COLOR : rgb(5, 5, 5);
+    --BG-COLOR : rgb(222, 210, 210);
+    --TP-BG :rgba(222, 195, 195, 0.167);
+    --SHADOW-HEADER:0px 4px 8px rgba(239, 234, 234, 0.383);
+    --HOVER-COLOR:rgba(255, 255, 255, 0.485);
+    --PADDING-HEADER-TB:clamp(0.3rem,1vw,0.6rem);
+    --PADDING-HEADER-LR:clamp(0.5rem,2vw,1rem);
+    --BTN-RADIUS:20px;
+    --MARGIN-MAIN-TB:clamp(1rem, 4vw, 2rem);
+    --MARGIN-MAIN-LR:clamp(1rem, 3vw,5rem);
+   /*  Cards on All Pages */
+    --FIG-SHADOW:5px 5px 8px 3px rgba(11, 15, 25, 0.861);
+    --FIG-HEIGHT:clamp(9rem,20vw,12rem);
+    --FIG--WIDTH:clamp(13rem,30vw,18rem);
+    --FIG-BORDER-RADIUS:8px;
+    
+  /*   For All */
+  --FS-HEADER: clamp(0.6rem, 3vw, 1rem);
+  --FS-FOOTER:clamp(0.6rem,2vw,0.9rem);
+
 }
 .body__Home{
     height: 100vh;
@@ -19,25 +39,31 @@
     background-repeat: no-repeat;
     background-position: center;
     justify-content: center;
-    color: var(--TEXT-COLOR);
+    color: var(--TEXT-COL-HOME);
 }
-.header{
+.header__Home{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     position:fixed;
     top: 0px;
     width: 100vw;
-    font-size: var(--FS);
-    padding: 1rem 0;
-    box-shadow: var(--SHADOW)
+    font-size: var(--FS-HEADER);
+    padding: var(--PADDING-HEADER-TB) var(--PADDING-HEADER-LR); /* DYNAMIC PADDING */
+    box-shadow: var(--SHADOW-HEADER)
     
 }
-.header__Links{
+.header__Links__Home :hover{
+    color: var(--HOVER-COLOR-HOME);
+    }
+.header__Links__Home{
     display: flex;
     justify-content: space-between;
     gap: 1rem; /* Use Mordern CSS here */
-   
+}
+.header__Links__Home a{
+    color: var(--TEXT-COL-HOME);
+    text-decoration: none;
 }
 .main__Home{
     display: flex;
@@ -59,10 +85,8 @@
     text-align: center;
     line-height: 2;   
 }
-.header__Links a{
-    text-decoration: none;
-    color: var(--TEXT-COLOR);
-}
+
+
 .main__Home__Article h1{
     font-size: x-large;
    
@@ -71,10 +95,112 @@
     font-size: medium;
     font-weight: 100;
 }
-.header__Links a:hover{
-color: var(--HOVER-COLOR);
-}
+
 .main__Home__Article img{
    height:1.5em;
     align-self: center;
+}
+/* common work To All Pages */
+
+.header__Links__All a{
+    text-decoration: none;
+    color: var(--TEXT-COL);
+}.header__Links__All a:hover{
+    color: var(--HOVER-COLOR);
+}
+.header__Links__All{
+    display: flex;
+    justify-content: space-between;
+    gap :1rem;
+}
+.header__All{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--TEXT-COLOR);
+    box-shadow: var(--SHADOW-HEADER);
+    font-size: var(--FS-HEADER);
+    padding: var(--PADDING-HEADER-TB) var(--PADDING-HEADER-LR);
+    width: 100%;
+}
+
+#explore__Button{
+   padding: 0.3rem 0rem;;
+   background: none;
+   border: none;
+   font-size: var(--FS-HEADER);
+}
+#explore__Nav{
+    gap: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#explore__Nav .material-symbols-outlined:hover{
+ background-color: var(--BG-COL-HOME);
+ color: var(--TEXT-COL-HOME);
+ border-radius:var(--BTN-RADIUS);
+}
+/* Work On Destination Page Begins */
+
+.body__All{
+    background-color:var(--BG-COLOR);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__Destination{
+    margin: var(--MARGIN-MAIN-TB) var(--MARGIN-MAIN-LR); /*changes to be done use Dynamic margin*/
+}
+.main__Destination__nav{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.button__Destination{
+    padding: 0.3rem 2rem;
+    border-radius: var(--BTN-RADIUS);
+    border: 2px solid whitesmoke;
+}.button__Destination:hover{
+    background-color: var(--BG-COL-HOME);
+    color: var(--TEXT-COL-HOME);
+    cursor:pointer;
+}
+.main__Destination__fig-section{
+    color: var(--TEXT-COLOR);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem auto;
+}
+.fig__Destination{
+    background-color:#FFFFFF;
+    padding: 0.6em;
+    margin-bottom: 1rem;
+    border-radius: var(--FIG-BORDER-RADIUS);
+    line-height: 2;
+   
+}
+.fig__Destination:hover{
+  cursor:pointer;
+  box-shadow: var(--FIG-SHADOW);
+}
+
+.img__Destination{
+    height: var(--FIG-HEIGHT);
+    width: var(--FIG--WIDTH);
+    padding-bottom: 1rem;
+    border-radius: 8px;
+}
+.fig__Destination p{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+.fig__Destination p span:hover{
+    color:var(--BG-COLOR);
+    border: 2px solid var(--BG-COLOR)
 }
