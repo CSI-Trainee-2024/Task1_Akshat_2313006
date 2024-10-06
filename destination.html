@@ -8,27 +8,32 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body class="body__All">
-    <header class="header__All">
-       <h2>
-         Find Your <br />
-         Favourite Place
-       </h2>
-       <div class="header__Links__All">
-        <nav id="explore__Nav">
-       <span class="material-symbols-outlined">
-        chevron_right
-        </span>
-       <button id="explore__Button">Explore</button>
+    <header class="header__Master">
+      <section class="header__All">
+        <img src="assets/pngegg.png" alt="logo" />
+
+        <div class="header__Links__All">
+          <a href="home.html">Home</a>
+          <a href="packages.html">Packages</a>
+          <a href="">Blogs</a>
+          <a href="">Contact</a>
+        </div>
+      </section>
+
+      <button class="menu-button">
+        <div class="menu-icon"></div>
+      </button>
+      <nav class="menu">
+        <ul>
+          <li><a href="destination.html">Destinations</a></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </nav>
-      </div>
-       <div class="header__Links__All">
-       <a href="home.html">Home</a>
-       <a href="">Packages</a>
-       <a href="">Blogs</a>
-      </div>
     </header>
     
-    <main class="main__Destination">
+    <main class="main__All">
       
       <nav class="main__Destination__nav">
         <button class="button__Destination">Snow</button>
@@ -40,8 +45,8 @@
         <button class="button__Destination">Spiritual</button>
       </nav>
     </section>
-      <section class="main__Destination__fig-section">
-        <figure class="fig__Destination">
+      <section class="main__All__fig-section">
+        <figure class="fig__All__fig-card">
          <img src="assets/snow.jpg" alt="snow" srcset="" class="img__Destination">
          <figcaption> 
             Snow Location 
@@ -52,7 +57,7 @@ add
             </p>
         </figcaption>
         </figure>
-        <figure class="fig__Destination">
+        <figure class="fig__All__fig-card">
          <img src="assets/lake.jpg" alt="Lake" srcset="" class="img__Destination">
          <figcaption> 
             Lake Location
@@ -63,7 +68,7 @@ add
             </p>
         </figcaption>
         </figure>
-        <figure class="fig__Destination">
+        <figure class="fig__All__fig-card">
          <img src="assets/camping.jpg" alt="camping" srcset="" class="img__Destination">
          <figcaption> 
             Camping Location
@@ -74,7 +79,7 @@ add
             </p>
         </figcaption>
         </figure>
-        <figure class="fig__Destination">
+        <figure class="fig__All__fig-card">
          <img src="assets/riverRafting.jpg" alt="river" srcset="" class="img__Destination">
          <figcaption> 
             River Rafting
@@ -85,7 +90,7 @@ add
             </p>
         </figcaption>
         </figure>
-        <figure class="fig__Destination">
+        <figure class="fig__All__fig-card">
          <img src="assets/treking.jpg" alt="trek" srcset="" class="img__Destination">
          <figcaption> 
         Famous Treks
@@ -96,7 +101,7 @@ add
             </p>
         </figcaption>
         </figure>
-        <figure class="fig__Destination">
+        <figure class="fig__All__fig-card">
          <img src="assets/wild.jpg" alt="Tiger" srcset="" class="img__Destination">
          <figcaption> 
            Wild Life
@@ -109,8 +114,44 @@ add
         </figure>
       </section>
     </main>
-    <footer class="footer">
-        <p class="footer__Paragraph">Copyright &copy; 2024 All rights reserved</p>
+    <footer class="footer__All">
+      <article class="footer__Content">
+        <section class="footer__Div footer__Para">
+          <h2>NAINITAL TOURISM</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            deserunt cumque explicabo aliquid quis cum dolores ab, animi
+            voluptatem at delectus beatae quo id fuga praesentium illo incidunt
+            autem. Ducimus.
+          </p>
+          <span class="logo__Social">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+          </span>
+        </section>
+        <section class="footer__Div">
+          <h2>COMPANY</h2>
+          <ul>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Packages</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </section>
+        <section class="footer__Div">
+          <h2>GET IN TOUCH</h2>
+          <h4>+1-212-456-7890</h4>
+          <h4>contact@NainitalTourism</h4>
+        </section>
+      </article>
+
+      <p class="footer__Paragraph">Copyright &copy; 2024 All rights reserved</p>
     </footer>
+    
+    <script
+      src="https://kit.fontawesome.com/7594182e62.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
