@@ -11,40 +11,53 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="body__All">
-    <header class="header__All">
-      <h2>
-        Find Your <br />
-        Favourite Place
-      </h2>
-      <div class="header__Links__All">
-        <nav id="explore__Nav">
-          <span class="material-symbols-outlined"> chevron_right </span>
-          <button id="explore__Button">Explore</button>
-        </nav>
-      </div>
-      <div class="header__Links__All">
-        <a href="home.html">Home</a>
-        <a href="destination.html">Destination</a>
-        <a href="">Blogs</a>
-      </div>
-    </header>
-    <main class="main__All">
+    <header class="header__Master">
+      <section class="header__All">
+        <img src="assets/pngegg.png" alt="logo" />
 
+        <div class="header__Links__All">
+          <a href="home.html">Home</a>
+          <a href="destination.html">Destination</a>
+          <a href="">Blogs</a>
+          <a href="">Contact</a>
+        </div>
+      </section>
+
+      <button class="menu-button">
+        <div class="menu-icon"></div>
+      </button>
+      <nav class="menu">
+        <ul>
+          <li><a href="destination.html">Destinations</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main__All">
       <nav class="search__Package">
-        <input type="text" placeholder="Tiffin Top" class="search__Box"/><span
-          class="material-symbols-outlined  search__Symbol"
+        <input type="text" placeholder="Tiffin Top" class="search__Box" /><span
+          class="material-symbols-outlined search__Symbol"
         >
           search </span
-        ><span class="material-symbols-outlined searchClose__Symbol"> close </span>
+        ><span class="material-symbols-outlined searchClose__Symbol">
+          close
+        </span>
       </nav>
+      <section class="description">
+        <h2>Must-do experiences in Manali</h2>
+        <p>Book these experiences for a close-up look at Manali.</p>
+      </section>
 
-
-      <section class="main__All__fig-section">
-
-
-
+      <article class="main__All__fig-section">
         <figure class="fig__package__fig-card">
-          <img src="assets/packageAssets/briguLakeTrek.jpg" alt="Frozen Lake" class="package__Img" />
+          <img
+            src="assets/packageAssets/briguLakeTrek.jpg"
+            alt="Frozen Lake"
+            class="package__Img"
+          />
           <figcaption class="card__caption">Brigu Lake Trek</figcaption>
           <p class="card__rating">oooooo 7</p>
           <h3 class="card__activity">Treking</h3>
@@ -58,27 +71,12 @@
           </section>
         </figure>
 
-
-
         <figure class="fig__package__fig-card">
-          <img src="assets/packageAssets/briguLakeTrek.jpg" alt="Frozen Lake" class="package__Img"/>
-          <figcaption  class="card__caption">Brigu Lake Trek</figcaption>
-          <p class="card__rating">oooooo 7</p>
-          <h3 class="card__activity">Treking</h3>
-          <section class="package__pricing">
-            <div class="card__price">
-              <span>from</span>
-              <h2>Rs 7000</h2>
-              <span>Per Adult</span>
-            </div>
-            <button class="reserve">Reserve</button>
-          </section>
-        </figure>
-
-
-
-        <figure class="fig__package__fig-card">
-          <img src="assets/packageAssets/briguLakeTrek.jpg" alt="Frozen Lake"class="package__Img" />
+          <img
+            src="assets/packageAssets/atal tunnel.jpg"
+            alt="Frozen Lake"
+            class="package__Img"
+          />
           <figcaption class="card__caption">Brigu Lake Trek</figcaption>
           <p class="card__rating">oooooo 7</p>
           <h3 class="card__activity">Treking</h3>
@@ -92,10 +90,12 @@
           </section>
         </figure>
 
-
-
         <figure class="fig__package__fig-card">
-          <img src="assets/packageAssets/briguLakeTrek.jpg" alt="Frozen Lake" class="package__Img"/>
+          <img
+            src="assets/packageAssets/exotic manali.jpg"
+            alt="Frozen Lake"
+            class="package__Img"
+          />
           <figcaption class="card__caption">Brigu Lake Trek</figcaption>
           <p class="card__rating">oooooo 7</p>
           <h3 class="card__activity">Treking</h3>
@@ -109,10 +109,12 @@
           </section>
         </figure>
 
-
-
         <figure class="fig__package__fig-card">
-          <img src="assets/packageAssets/briguLakeTrek.jpg" alt="Frozen Lake" class="package__Img"/>
+          <img
+            src="assets/packageAssets/friendship peak.jpg"
+            alt="Frozen Lake"
+            class="package__Img"
+          />
           <figcaption class="card__caption">Brigu Lake Trek</figcaption>
           <p class="card__rating">oooooo 7</p>
           <h3 class="card__activity">Treking</h3>
@@ -126,10 +128,31 @@
           </section>
         </figure>
 
-
+        <figure class="fig__package__fig-card">
+          <img
+            src="assets/packageAssets/historic.jpg"
+            alt="Frozen Lake"
+            class="package__Img"
+          />
+          <figcaption class="card__caption">Brigu Lake Trek</figcaption>
+          <p class="card__rating">oooooo 7</p>
+          <h3 class="card__activity">Treking</h3>
+          <section class="package__pricing">
+            <div class="card__price">
+              <span>from</span>
+              <h2>Rs 7000</h2>
+              <span>Per Adult</span>
+            </div>
+            <button class="reserve">Reserve</button>
+          </section>
+        </figure>
 
         <figure class="fig__package__fig-card">
-          <img src="assets/packageAssets/briguLakeTrek.jpg" alt="Frozen Lake" class="package__Img" />
+          <img
+            src="assets/packageAssets/lux car.jpg"
+            alt="Frozen Lake"
+            class="package__Img"
+          />
           <figcaption class="card__caption">Brigu Lake Trek</figcaption>
           <p class="card__rating">oooooo 7</p>
           <h3 class="card__activity">Treking</h3>
@@ -142,66 +165,46 @@
             <button class="reserve">Reserve</button>
           </section>
         </figure>
-
-
-
-
-        <figure class="fig__package__fig-card">
-          <img src="assets/packageAssets/briguLakeTrek.jpg" alt="Frozen Lake" class="package__Img"/>
-          <figcaption class="card__caption">Brigu Lake Trek</figcaption>
-          <p class="card__rating">oooooo 7</p>
-          <h3 class="card__activity">Treking</h3>
-          <section class="package__pricing">
-            <div class="card__price">
-              <span>from</span>
-              <h2>Rs 7000</h2>
-              <span>Per Adult</span>
-            </div>
-            <button class="reserve">Reserve</button>
-          </section>
-        </figure>
-
-
-
-        <figure class="fig__package__fig-card">
-          <img src="assets/packageAssets/briguLakeTrek.jpg" alt="Frozen Lake" class="package__Img"/>
-          <figcaption class="card__caption">Brigu Lake Trek</figcaption>
-          <p class="card__rating">oooooo 7</p>
-          <h3 class="card__activity">Treking</h3>
-          <section class="package__pricing">
-            <div class="card__price">
-              <span>from</span>
-              <h2>Rs 7000</h2>
-              <span>Per Adult</span>
-            </div>
-            <button class="reserve">Reserve</button>
-          </section>
-        </figure>
-
-
-
-
-        <figure class="fig__package__fig-card">
-          <img src="assets/packageAssets/briguLakeTrek.jpg" alt="Frozen Lake" class="package__Img"/>
-          <figcaption class="card__caption">Brigu Lake Trek</figcaption>
-          <p class="card__rating">oooooo 7</p>
-          <h3 class="card__activity">Treking</h3>
-          <section  class="package__pricing">
-            <div class="card__price">
-              <span>from</span>
-              <h2>Rs 7000</h2>
-              <span>Per Adult</span>
-            </div>
-            <button class="reserve">Reserve</button>
-          </section>
-        </figure>
-
-
-
-
-
-      </section>
+      </article>
+      <button id="see__All">See All</button>
     </main>
-    <footer></footer>
+    <footer class="footer__All">
+      <article class="footer__Content">
+        <section class="footer__Div footer__Para">
+          <h2>NAINITAL TOURISM</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            deserunt cumque explicabo aliquid quis cum dolores ab, animi
+            voluptatem at delectus beatae quo id fuga praesentium illo incidunt
+            autem. Ducimus.
+          </p>
+          <span class="logo__Social">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+          </span>
+        </section>
+        <section class="footer__Div">
+          <h2>COMPANY</h2>
+          <ul>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Packages</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </section>
+        <section class="footer__Div">
+          <h2>GET IN TOUCH</h2>
+          <h4>+1-212-456-7890</h4>
+          <h4>contact@NainitalTourism</h4>
+        </section>
+      </article>
+
+      <p class="footer__Paragraph">Copyright &copy; 2024 All rights reserved</p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/7594182e62.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
