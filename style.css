@@ -478,5 +478,7 @@ fieldset legend{
  }
  .contact__Article h5{
     color: var(--TEXT-COLOR);
-
+ }
+ input,textarea{
+    text-align: center;
  }
