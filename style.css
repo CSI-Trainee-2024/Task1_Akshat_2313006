@@ -119,6 +119,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: var(--MARGIN-MAIN-TB) var(--MARGIN-MAIN-LR); /*changes to be done use Dynamic margin*/
     margin-bottom: 0px;
     margin-top: 5rem;
@@ -130,7 +131,7 @@
     flex-wrap: wrap;
     gap: 0.5rem;
 }
-.button__Destination,#seeAll,.reserve{
+.button__Destination,#seeAll,.reserve,.form__Button{
     padding: var(--BTN-PADDING);
     border-radius: var(--BTN-RADIUS);
     border: var(--BORDER);
@@ -387,7 +388,7 @@ width: 16em;
         font-size: 1.2em;
         gap: clamp(0.3em,6.5vw,5em)
     }
-    input:hover{
+    .search__Box input:hover{
         transform: scale(1.2);
         transition-timing-function: ease-in-out;
         transition: all 0.3s;
@@ -445,6 +446,36 @@ width: 16em;
         gap: 2em;
         align-content: flex-start;
      }
+     fieldset{
+        margin: 1em 15em;
+    }
+ }
+.label{
+    display: block;
+    margin-top: 1em;
+    margin:1em var(--MARGIN-MAIN-LR);
+    font-weight:500;
+}
+form{
+    margin: 2em auto;
+}
+fieldset{
+    border: none;
+    width: 70%;
+    margin: 1em 5em;
+}
+fieldset legend{
+    text-align: center;
+    color: var(--TEXT-COLOR);
+    font-weight: bolder;
+    font-size: larger;
+}
+ .contact__Input,.form__Button{
+    width: 100%;
+    border-radius: var(--FIG-BORDER-RADIUS);
+    line-height: 2em;
  }
 
- 
+ .contact__Section{
+    width: 100%;
+ }
